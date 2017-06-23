@@ -195,3 +195,39 @@ figure {
 .about > p {
   margin: 0;
 }
+
+
+
+
+
+
+
+
+
+
+/* media query for tablet */
+
+@media (min-width: 768px) {
+  nav.site-nav {
+    top: 0;
+    left: 0;
+    z-index: -100;
+  }
+  li.site-nav-item {
+    float: none;
+  }
+  main {
+    margin-left: 110px;
+  }
+  li.site-nav-item:first-of-type {
+    margin-top: 110px;
+  }
+
+  .site-nav-item {
+    width: 110px;
+  }
+
+  movie-overview {
+    display: block;
+  }
+}
