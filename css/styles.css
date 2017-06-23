@@ -196,15 +196,6 @@ figure {
   margin: 0;
 }
 
-
-
-
-
-
-
-
-
-
 /* media query for tablet */
 
 @media (min-width: 768px) {
@@ -222,12 +213,30 @@ figure {
   li.site-nav-item:first-of-type {
     margin-top: 110px;
   }
-
   .site-nav-item {
     width: 110px;
   }
-
   movie-overview {
     display: block;
   }
+}
+
+/* media query for large screen */
+@media (min-width: 992px) {
+  movie-overview:first-of-type {
+    display: block;
+}
+article.movie:first-child {
+    width: 100%;
+}
+article.movie {
+    width: 33%;
+    float: left;
+}
+main article:first-of-type .movie-overview {
+    display: block;
+}
+main article:last-of-type {
+    display: none;
+}
 }
